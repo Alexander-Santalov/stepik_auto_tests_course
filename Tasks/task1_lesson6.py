@@ -29,7 +29,7 @@ def test_lesson6_step5():
     try:
         browser = webdriver.Chrome()
         browser.get(link)
-        browser.find_element(By.LINK_TEXT, str(math.ceil(math.pow(math.pi, math.e)*10000))).click()
+        browser.find_element(By.LINK_TEXT, str(math.ceil(math.pow(math.pi, math.e) * 10000))).click()
 
         browser.find_element(By.TAG_NAME, "input").send_keys("Ivan")
         browser.find_element(By.NAME, "last_name").send_keys("Petrov")
